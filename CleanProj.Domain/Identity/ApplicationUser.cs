@@ -8,9 +8,9 @@ namespace CleanProj.Domain.Identity;
 public sealed class ApplicationUser : IdentityUser<Guid>,ICreatedByEntity, IModifiedByEntity
 {
     public FullName FullName { get; set; }
-    public string CreatedByUserId { get; set; }
+    public string? CreatedByUserId { get; set; }
     public DateTimeOffset CreateAt { get; set; }
-    public string ModifiedByUserId { get; set; }
+    public string? ModifiedByUserId { get; set; }
     public DateTimeOffset? ModifiedAt { get; set; }
     public ICollection<UserSocialMediaAccount> UserSocialMediaAccounts { get; set; } = [];
     public ICollection<UserFavoritePrompt> UserFavoritePrompts { get; set; } = [];

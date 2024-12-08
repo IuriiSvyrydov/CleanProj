@@ -5,9 +5,9 @@ namespace CleanProj.Domain.Entities;
 
 public class UserLikePrompt:BaseEntity
 {
-    public long UserId { get; set; }
-    public ApplicationUser ApplicationUser { get; set; }
-    public long PromptId { get; set; }
+    public Guid UserId { get; set; }
+    public ApplicationUser User { get; set; }
+    public Guid PromptId { get; set; }
     public Prompt Prompt { get; set; }
     
 }

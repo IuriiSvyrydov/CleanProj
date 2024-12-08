@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace CleanProj.Persistence.EntityFramework.Configurations;
 
-public class ApplicationUserClaimConfiguration : IEntityTypeConfiguration<ApplicationUserClaim>
+public sealed class ApplicationUserClaimConfiguration : IEntityTypeConfiguration<ApplicationUserClaim>
 {
     public void Configure(EntityTypeBuilder<ApplicationUserClaim> builder)
     {
